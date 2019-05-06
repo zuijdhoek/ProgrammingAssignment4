@@ -77,3 +77,6 @@ data_avg <-
     group_by(subject_id, activity, var) %>% 
     summarise(avg = mean(value, na.rm=T)) %>%
     spread(var, avg)
+
+#resultset as data frame
+data_avg_fr <- as.data.frame(data_avg)

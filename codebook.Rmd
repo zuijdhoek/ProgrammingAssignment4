@@ -1,0 +1,1965 @@
+---
+# Data report overview
+The dataset examined has the following dimensions:
+
+
+---------------------------------
+Feature                    Result
+------------------------ --------
+Number of observations         40
+
+Number of variables            81
+---------------------------------
+
+# Codebook summary table
+
+------------------------------------------------------------------------------------------
+Label   Variable                              Class       # unique  Missing  Description  
+                                                            values                        
+------- ------------------------------------- --------- ---------- --------- -------------
+        **[subject\_id]**                     integer           30  0.00 %   subject id [1-30]
+
+        **[activity]**                        factor             6  0.00 %   activity description
+
+        **[fBodyAcc-mean-X]**                 numeric           40  0.00 %   some mean signal value
+
+        **[fBodyAcc-mean-Y]**                 numeric           40  0.00 %   some mean value
+
+        **[fBodyAcc-mean-Z]**                 numeric           40  0.00 %   some mean value
+
+        **[fBodyAcc-meanFreq-X]**             numeric           40  0.00 %   some mean value
+
+        **[fBodyAcc-meanFreq-Y]**             numeric           40  0.00 %   some mean value
+
+        **[fBodyAcc-meanFreq-Z]**             numeric           40  0.00 %   some mean value
+
+        **[fBodyAcc-std-X]**                  numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyAcc-std-Y]**                  numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyAcc-std-Z]**                  numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyAccJerk-mean-X]**             numeric           40  0.00 %   some mean value
+
+        **[fBodyAccJerk-mean-Y]**             numeric           40  0.00 %   some mean value
+
+        **[fBodyAccJerk-mean-Z]**             numeric           40  0.00 %   some mean value
+
+        **[fBodyAccJerk-meanFreq-X]**         numeric           40  0.00 %   some mean value
+
+        **[fBodyAccJerk-meanFreq-Y]**         numeric           40  0.00 %   some mean value
+
+        **[fBodyAccJerk-meanFreq-Z]**         numeric           40  0.00 %   some mean value
+
+        **[fBodyAccJerk-std-X]**              numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyAccJerk-std-Y]**              numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyAccJerk-std-Z]**              numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyAccMag-mean]**                numeric           40  0.00 %   some mean value
+
+        **[fBodyAccMag-meanFreq]**            numeric           40  0.00 %   some mean value
+
+        **[fBodyAccMag-std]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyBodyAccJerkMag-mean]**        numeric           40  0.00 %   some mean value
+
+        **[fBodyBodyAccJerkMag-meanFreq]**    numeric           40  0.00 %   some mean value
+
+        **[fBodyBodyAccJerkMag-std]**         numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyBodyGyroJerkMag-mean]**       numeric           40  0.00 %   some mean value
+
+        **[fBodyBodyGyroJerkMag-meanFreq]**   numeric           40  0.00 %   some mean value
+
+        **[fBodyBodyGyroJerkMag-std]**        numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyBodyGyroMag-mean]**           numeric           40  0.00 %   some mean value
+
+        **[fBodyBodyGyroMag-meanFreq]**       numeric           40  0.00 %   some mean value
+
+        **[fBodyBodyGyroMag-std]**            numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyGyro-mean-X]**                numeric           40  0.00 %   some mean value
+
+        **[fBodyGyro-mean-Y]**                numeric           40  0.00 %   some mean value
+
+        **[fBodyGyro-mean-Z]**                numeric           40  0.00 %   some mean value
+
+        **[fBodyGyro-meanFreq-X]**            numeric           40  0.00 %   some mean value
+
+        **[fBodyGyro-meanFreq-Y]**            numeric           40  0.00 %   some mean value
+
+        **[fBodyGyro-meanFreq-Z]**            numeric           40  0.00 %   some mean value
+
+        **[fBodyGyro-std-X]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyGyro-std-Y]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[fBodyGyro-std-Z]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAcc-mean-X]**                 numeric           40  0.00 %   some mean value
+
+        **[tBodyAcc-mean-Y]**                 numeric           40  0.00 %   some mean value
+
+        **[tBodyAcc-mean-Z]**                 numeric           40  0.00 %   some mean value
+
+        **[tBodyAcc-std-X]**                  numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAcc-std-Y]**                  numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAcc-std-Z]**                  numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAccJerk-mean-X]**             numeric           40  0.00 %   some mean value
+
+        **[tBodyAccJerk-mean-Y]**             numeric           40  0.00 %   some mean value
+
+        **[tBodyAccJerk-mean-Z]**             numeric           40  0.00 %   some mean value
+
+        **[tBodyAccJerk-std-X]**              numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAccJerk-std-Y]**              numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAccJerk-std-Z]**              numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAccJerkMag-mean]**            numeric           40  0.00 %   some mean value
+
+        **[tBodyAccJerkMag-std]**             numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyAccMag-mean]**                numeric           40  0.00 %   some mean value
+
+        **[tBodyAccMag-std]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyro-mean-X]**                numeric           40  0.00 %   some mean value
+
+        **[tBodyGyro-mean-Y]**                numeric           40  0.00 %   some mean value
+
+        **[tBodyGyro-mean-Z]**                numeric           40  0.00 %   some mean value
+
+        **[tBodyGyro-std-X]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyro-std-Y]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyro-std-Z]**                 numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyroJerk-mean-X]**            numeric           40  0.00 %   some mean value
+
+        **[tBodyGyroJerk-mean-Y]**            numeric           40  0.00 %   some mean value
+
+        **[tBodyGyroJerk-mean-Z]**            numeric           40  0.00 %   some mean value
+
+        **[tBodyGyroJerk-std-X]**             numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyroJerk-std-Y]**             numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyroJerk-std-Z]**             numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyroJerkMag-mean]**           numeric           40  0.00 %   some mean value
+
+        **[tBodyGyroJerkMag-std]**            numeric           40  0.00 %   some standard deviation value
+
+        **[tBodyGyroMag-mean]**               numeric           40  0.00 %   some mean value
+
+        **[tBodyGyroMag-std]**                numeric           40  0.00 %   some standard deviation value
+
+        **[tGravityAcc-mean-X]**              numeric           40  0.00 %   some mean value
+
+        **[tGravityAcc-mean-Y]**              numeric           40  0.00 %   some mean value
+
+        **[tGravityAcc-mean-Z]**              numeric           40  0.00 %   some mean value
+
+        **[tGravityAcc-std-X]**               numeric           40  0.00 %   some standard deviation value
+
+        **[tGravityAcc-std-Y]**               numeric           40  0.00 %   some standard deviation value
+
+        **[tGravityAcc-std-Z]**               numeric           40  0.00 %   some standard deviation value
+
+        **[tGravityAccMag-mean]**             numeric           40  0.00 %   some mean value
+
+        **[tGravityAccMag-std]**              numeric           40  0.00 %   some standard deviation value
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------
+Feature                       Result
+------------------------- ----------
+Variable type                integer
+
+Number of missing obs.       0 (0 %)
+
+Number of unique values           30
+
+Median                          15.5
+
+1st and 3rd quartiles       8.75; 22
+
+Min. and max.                  1; 30
+------------------------------------
+
+
+
+## activity
+
+
+----------------------------------------------
+Feature                                 Result
+------------------------- --------------------
+Variable type                           factor
+
+Number of missing obs.                 0 (0 %)
+
+Number of unique values                      6
+
+Mode                        "WALKING_UPSTAIRS"
+
+Reference category                      LAYING
+----------------------------------------------
+
+"SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS"
+
+
+
+- Observed factor levels: \"LAYING\", \"SITTING\", \"STANDING\", \"WALKING\", \"WALKING_DOWNSTAIRS\", \"WALKING_UPSTAIRS\". 
+
+
+
+---
+
+## fBodyAcc-mean-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.62
+
+1st and 3rd quartiles       -0.69; -0.58
+
+Min. and max.               -0.99; -0.13
+----------------------------------------
+
+---
+
+## fBodyAcc-mean-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.56
+
+1st and 3rd quartiles       -0.61; -0.44
+
+Min. and max.                 -0.98; 0.1
+----------------------------------------
+
+---
+
+## fBodyAcc-mean-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.69
+
+1st and 3rd quartiles       -0.74; -0.63
+
+Min. and max.               -0.98; -0.27
+----------------------------------------
+
+
+
+---
+
+## fBodyAcc-meanFreq-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.22
+
+1st and 3rd quartiles       -0.24; -0.18
+
+Min. and max.                -0.35; 0.01
+----------------------------------------
+
+
+---
+
+## fBodyAcc-meanFreq-Y
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                             0.04
+
+1st and 3rd quartiles       -0.03; 0.07
+
+Min. and max.               -0.16; 0.14
+---------------------------------------
+
+---
+
+## fBodyAcc-meanFreq-Z
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                             0.05
+
+1st and 3rd quartiles        0.01; 0.09
+
+Min. and max.               -0.14; 0.28
+---------------------------------------
+
+
+
+---
+
+## fBodyAcc-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.62
+
+1st and 3rd quartiles       -0.66; -0.55
+
+Min. and max.               -0.99; -0.13
+----------------------------------------
+
+---
+
+## fBodyAcc-std-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.54
+
+1st and 3rd quartiles       -0.61; -0.46
+
+Min. and max.                -0.97; 0.06
+----------------------------------------
+
+
+---
+
+## fBodyAcc-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.65
+
+1st and 3rd quartiles       -0.71; -0.59
+
+Min. and max.               -0.97; -0.06
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-mean-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.66
+
+1st and 3rd quartiles        -0.72; -0.6
+
+Min. and max.               -0.99; -0.21
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-mean-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.64
+
+1st and 3rd quartiles        -0.7; -0.54
+
+Min. and max.               -0.99; -0.09
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-mean-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.77
+
+1st and 3rd quartiles       -0.81; -0.71
+
+Min. and max.               -0.99; -0.35
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-meanFreq-X
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                            -0.04
+
+1st and 3rd quartiles       -0.09; 0.02
+
+Min. and max.               -0.27; 0.26
+---------------------------------------
+
+
+---
+
+## fBodyAccJerk-meanFreq-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.2
+
+1st and 3rd quartiles       -0.25; -0.16
+
+Min. and max.                 -0.4; 0.09
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-meanFreq-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.11
+
+1st and 3rd quartiles       -0.17; -0.07
+
+Min. and max.                 -0.3; 0.14
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.65
+
+1st and 3rd quartiles       -0.71; -0.59
+
+Min. and max.               -0.99; -0.21
+----------------------------------------
+
+
+---
+
+## fBodyAccJerk-std-Y
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                            -0.62
+
+1st and 3rd quartiles       -0.68; -0.5
+
+Min. and max.               -0.99; 0.04
+---------------------------------------
+
+
+---
+
+## fBodyAccJerk-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.8
+
+1st and 3rd quartiles       -0.85; -0.74
+
+Min. and max.               -0.99; -0.42
+----------------------------------------
+
+
+---
+
+## fBodyAccMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.59
+
+1st and 3rd quartiles       -0.66; -0.52
+
+Min. and max.               -0.98; -0.06
+----------------------------------------
+
+
+---
+
+## fBodyAccMag-meanFreq
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                             0.08
+
+1st and 3rd quartiles        0.04; 0.14
+
+Min. and max.               -0.07; 0.26
+---------------------------------------
+
+
+---
+
+## fBodyAccMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.67
+
+1st and 3rd quartiles       -0.71; -0.62
+
+Min. and max.               -0.97; -0.27
+----------------------------------------
+
+
+---
+
+## fBodyBodyAccJerkMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.62
+
+1st and 3rd quartiles       -0.68; -0.54
+
+Min. and max.               -0.99; -0.08
+----------------------------------------
+
+
+---
+
+## fBodyBodyAccJerkMag-meanFreq
+
+
+--------------------------------------
+Feature                         Result
+------------------------- ------------
+Variable type                  numeric
+
+Number of missing obs.         0 (0 %)
+
+Number of unique values             40
+
+Median                            0.18
+
+1st and 3rd quartiles       0.12; 0.22
+
+Min. and max.               -0.02; 0.4
+--------------------------------------
+
+
+---
+
+## fBodyBodyAccJerkMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.64
+
+1st and 3rd quartiles       -0.69; -0.58
+
+Min. and max.               -0.99; -0.11
+----------------------------------------
+
+
+---
+
+## fBodyBodyGyroJerkMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.8
+
+1st and 3rd quartiles       -0.86; -0.72
+
+Min. and max.               -0.99; -0.25
+----------------------------------------
+
+
+---
+
+## fBodyBodyGyroJerkMag-meanFreq
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                             0.13
+
+1st and 3rd quartiles        0.07; 0.18
+
+Min. and max.               -0.01; 0.33
+---------------------------------------
+
+
+---
+
+## fBodyBodyGyroJerkMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.81
+
+1st and 3rd quartiles       -0.87; -0.74
+
+Min. and max.               -0.99; -0.27
+----------------------------------------
+
+
+---
+
+## fBodyBodyGyroMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.73
+
+1st and 3rd quartiles       -0.77; -0.65
+
+Min. and max.               -0.99; -0.16
+----------------------------------------
+
+
+---
+
+## fBodyBodyGyroMag-meanFreq
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                            -0.04
+
+1st and 3rd quartiles       -0.11; 0.01
+
+Min. and max.               -0.31; 0.29
+---------------------------------------
+
+
+---
+
+## fBodyBodyGyroMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.71
+
+1st and 3rd quartiles       -0.77; -0.66
+
+Min. and max.               -0.98; -0.38
+----------------------------------------
+
+
+---
+
+## fBodyGyro-mean-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.67
+
+1st and 3rd quartiles       -0.71; -0.63
+
+Min. and max.               -0.99; -0.08
+----------------------------------------
+
+
+---
+
+## fBodyGyro-mean-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.75
+
+1st and 3rd quartiles        -0.8; -0.64
+
+Min. and max.               -0.99; -0.25
+----------------------------------------
+
+
+---
+
+## fBodyGyro-mean-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.67
+
+1st and 3rd quartiles        -0.71; -0.6
+
+Min. and max.               -0.99; -0.08
+----------------------------------------
+
+
+---
+
+## fBodyGyro-meanFreq-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.1
+
+1st and 3rd quartiles       -0.14; -0.04
+
+Min. and max.                -0.31; 0.12
+----------------------------------------
+
+
+---
+
+## fBodyGyro-meanFreq-Y
+
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                            -0.16
+
+1st and 3rd quartiles       -0.24; -0.1
+
+Min. and max.                -0.4; 0.08
+---------------------------------------
+
+
+---
+
+## fBodyGyro-meanFreq-Z
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                            -0.04
+
+1st and 3rd quartiles          -0.08; 0
+
+Min. and max.               -0.27; 0.27
+---------------------------------------
+
+
+---
+
+## fBodyGyro-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.74
+
+1st and 3rd quartiles       -0.79; -0.69
+
+Min. and max.               -0.99; -0.45
+----------------------------------------
+
+
+---
+
+## fBodyGyro-std-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.73
+
+1st and 3rd quartiles       -0.77; -0.65
+
+Min. and max.               -0.98; -0.15
+----------------------------------------
+
+
+---
+
+## fBodyGyro-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.72
+
+1st and 3rd quartiles       -0.75; -0.64
+
+Min. and max.               -0.99; -0.23
+----------------------------------------
+
+
+---
+
+## tBodyAcc-mean-X
+
+
+--------------------------------------
+Feature                         Result
+------------------------- ------------
+Variable type                  numeric
+
+Number of missing obs.         0 (0 %)
+
+Number of unique values             40
+
+Median                            0.28
+
+1st and 3rd quartiles       0.27; 0.28
+
+Min. and max.               0.27; 0.28
+--------------------------------------
+
+
+---
+
+## tBodyAcc-mean-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.02
+
+1st and 3rd quartiles       -0.02; -0.02
+
+Min. and max.               -0.02; -0.01
+----------------------------------------
+
+
+---
+
+## tBodyAcc-mean-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.11
+
+1st and 3rd quartiles       -0.11; -0.11
+
+Min. and max.                -0.12; -0.1
+----------------------------------------
+
+
+---
+
+## tBodyAcc-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.62
+
+1st and 3rd quartiles       -0.67; -0.55
+
+Min. and max.               -0.99; -0.13
+----------------------------------------
+
+
+---
+
+## tBodyAcc-std-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.53
+
+1st and 3rd quartiles       -0.59; -0.42
+
+Min. and max.                -0.97; 0.12
+----------------------------------------
+
+
+---
+
+## tBodyAcc-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.65
+
+1st and 3rd quartiles       -0.71; -0.58
+
+Min. and max.               -0.98; -0.08
+----------------------------------------
+
+
+---
+
+## tBodyAccJerk-mean-X
+
+
+--------------------------------------
+Feature                         Result
+------------------------- ------------
+Variable type                  numeric
+
+Number of missing obs.         0 (0 %)
+
+Number of unique values             40
+
+Median                            0.08
+
+1st and 3rd quartiles       0.08; 0.08
+
+Min. and max.               0.06; 0.09
+--------------------------------------
+
+
+---
+
+## tBodyAccJerk-mean-Y
+
+
+-----------------------------------
+Feature                      Result
+------------------------- ---------
+Variable type               numeric
+
+Number of missing obs.      0 (0 %)
+
+Number of unique values          40
+
+Median                         0.01
+
+1st and 3rd quartiles       0; 0.01
+
+Min. and max.               0; 0.02
+-----------------------------------
+
+
+---
+
+## tBodyAccJerk-mean-Z
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                                0
+
+1st and 3rd quartiles          -0.01; 0
+
+Min. and max.               -0.02; 0.02
+---------------------------------------
+
+
+---
+
+## tBodyAccJerk-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.64
+
+1st and 3rd quartiles        -0.7; -0.58
+
+Min. and max.               -0.99; -0.17
+----------------------------------------
+
+
+---
+
+## tBodyAccJerk-std-Y
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                            -0.62
+
+1st and 3rd quartiles       -0.68; -0.5
+
+Min. and max.                  -0.99; 0
+---------------------------------------
+
+
+---
+
+## tBodyAccJerk-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.78
+
+1st and 3rd quartiles       -0.83; -0.73
+
+Min. and max.               -0.99; -0.39
+----------------------------------------
+
+
+---
+
+## tBodyAccJerkMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.66
+
+1st and 3rd quartiles       -0.71; -0.58
+
+Min. and max.               -0.99; -0.15
+----------------------------------------
+
+
+---
+
+## tBodyAccJerkMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.63
+
+1st and 3rd quartiles       -0.69; -0.56
+
+Min. and max.               -0.99; -0.09
+----------------------------------------
+
+
+---
+
+## tBodyAccMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.54
+
+1st and 3rd quartiles        -0.62; -0.5
+
+Min. and max.               -0.98; -0.06
+----------------------------------------
+
+
+---
+
+## tBodyAccMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.6
+
+1st and 3rd quartiles       -0.66; -0.55
+
+Min. and max.                -0.97; -0.1
+----------------------------------------
+
+
+--
+
+## tBodyGyro-mean-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.03
+
+1st and 3rd quartiles       -0.04; -0.02
+
+Min. and max.                -0.07; 0.01
+----------------------------------------
+
+
+---
+
+## tBodyGyro-mean-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.08
+
+1st and 3rd quartiles       -0.08; -0.07
+
+Min. and max.                -0.1; -0.04
+----------------------------------------
+
+
+---
+
+## tBodyGyro-mean-Z
+
+
+--------------------------------------
+Feature                         Result
+------------------------- ------------
+Variable type                  numeric
+
+Number of missing obs.         0 (0 %)
+
+Number of unique values             40
+
+Median                            0.09
+
+1st and 3rd quartiles        0.08; 0.1
+
+Min. and max.               0.05; 0.12
+--------------------------------------
+
+
+---
+
+## tBodyGyro-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.72
+
+1st and 3rd quartiles       -0.77; -0.68
+
+Min. and max.               -0.99; -0.35
+----------------------------------------
+
+
+---
+
+## tBodyGyro-std-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.73
+
+1st and 3rd quartiles       -0.77; -0.64
+
+Min. and max.               -0.99; -0.22
+----------------------------------------
+
+
+---
+
+## tBodyGyro-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.69
+
+1st and 3rd quartiles        -0.72; -0.6
+
+Min. and max.               -0.99; -0.17
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerk-mean-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.1
+
+1st and 3rd quartiles        -0.1; -0.09
+
+Min. and max.               -0.11; -0.06
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerk-mean-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.04
+
+1st and 3rd quartiles       -0.04; -0.04
+
+Min. and max.               -0.05; -0.04
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerk-mean-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.06
+
+1st and 3rd quartiles       -0.06; -0.05
+
+Min. and max.               -0.06; -0.04
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerk-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.74
+
+1st and 3rd quartiles       -0.78; -0.67
+
+Min. and max.               -0.99; -0.03
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerk-std-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.81
+
+1st and 3rd quartiles       -0.87; -0.72
+
+Min. and max.                -0.99; -0.3
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerk-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.76
+
+1st and 3rd quartiles        -0.8; -0.69
+
+Min. and max.               -0.99; -0.05
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerkMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.78
+
+1st and 3rd quartiles       -0.83; -0.71
+
+Min. and max.                -0.99; -0.2
+----------------------------------------
+
+
+---
+
+## tBodyGyroJerkMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.8
+
+1st and 3rd quartiles       -0.86; -0.72
+
+Min. and max.               -0.99; -0.24
+----------------------------------------
+
+
+---
+
+## tBodyGyroMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.62
+
+1st and 3rd quartiles       -0.69; -0.55
+
+Min. and max.               -0.98; -0.18
+----------------------------------------
+
+
+---
+
+## tBodyGyroMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.68
+
+1st and 3rd quartiles       -0.74; -0.61
+
+Min. and max.                -0.98; -0.2
+----------------------------------------
+
+
+---
+
+## tGravityAcc-mean-X
+
+
+--------------------------------------
+Feature                         Result
+------------------------- ------------
+Variable type                  numeric
+
+Number of missing obs.         0 (0 %)
+
+Number of unique values             40
+
+Median                            0.67
+
+1st and 3rd quartiles        0.65; 0.7
+
+Min. and max.               0.48; 0.96
+--------------------------------------
+
+
+
+---
+
+## tGravityAcc-mean-Y
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                             0.02
+
+1st and 3rd quartiles       -0.06; 0.07
+
+Min. and max.               -0.18; 0.28
+---------------------------------------
+
+
+---
+
+## tGravityAcc-mean-Z
+
+
+---------------------------------------
+Feature                          Result
+------------------------- -------------
+Variable type                   numeric
+
+Number of missing obs.          0 (0 %)
+
+Number of unique values              40
+
+Median                             0.09
+
+1st and 3rd quartiles        0.04; 0.14
+
+Min. and max.               -0.28; 0.24
+---------------------------------------
+
+
+---
+
+## tGravityAcc-std-X
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.97
+
+1st and 3rd quartiles       -0.97; -0.96
+
+Min. and max.                  -1; -0.93
+----------------------------------------
+
+
+---
+
+## tGravityAcc-std-Y
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.96
+
+1st and 3rd quartiles       -0.96; -0.95
+
+Min. and max.                -0.98; -0.9
+----------------------------------------
+
+
+---
+
+## tGravityAcc-std-Z
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.94
+
+1st and 3rd quartiles       -0.95; -0.93
+
+Min. and max.               -0.97; -0.88
+----------------------------------------
+
+
+---
+
+## tGravityAccMag-mean
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                             -0.54
+
+1st and 3rd quartiles        -0.62; -0.5
+
+Min. and max.               -0.98; -0.06
+----------------------------------------
+
+
+---
+
+## tGravityAccMag-std
+
+
+----------------------------------------
+Feature                           Result
+------------------------- --------------
+Variable type                    numeric
+
+Number of missing obs.           0 (0 %)
+
+Number of unique values               40
+
+Median                              -0.6
+
+1st and 3rd quartiles       -0.66; -0.55
+
+Min. and max.                -0.97; -0.1
+----------------------------------------
+
+
+---
