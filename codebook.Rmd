@@ -181,6 +181,7 @@ Label   Variable                              Class       # unique  Missing  Des
 ------------------------------------------------------------------------------------------
 
 
+## subject_id
 
 ------------------------------------
 Feature                       Result
@@ -218,11 +219,6 @@ Reference category                      LAYING
 ----------------------------------------------
 
 "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS"
-
-
-
-- Observed factor levels: \"LAYING\", \"SITTING\", \"STANDING\", \"WALKING\", \"WALKING_DOWNSTAIRS\", \"WALKING_UPSTAIRS\". 
-
 
 
 ---

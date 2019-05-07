@@ -1,5 +1,10 @@
 #Programming assignment Getting And Cleaning Data
-#rm(list=ls())
+
+#install packages when needed
+
+#install.packages("dplyr")
+#install.packages("tidyr")
+
 library(dplyr)
 library(tidyr)
 
@@ -80,3 +85,6 @@ data_avg <-
 
 #resultset as data frame
 data_avg_fr <- as.data.frame(data_avg)
+
+#write resultset to working directory
+#write.table(data_avg_fr, "resultset.txt", row.names = FALSE)
