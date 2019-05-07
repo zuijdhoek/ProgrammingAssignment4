@@ -10,7 +10,7 @@ IMPORTANT!
 
 Only when the original data files (not included) are located in your R-Studion working directory (subfolder **"UCI HAR Dataset"**) the resultset can be reproduced!  
 
-**result.txt**  
+**resultset.txt**  
 This is the final dataset. This is a space separated file which can be loaded in R studio using following statement:  
 
 
