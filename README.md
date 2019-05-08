@@ -1,14 +1,22 @@
 ### Programming Assignment 4: Getting And Cleaning Data  
 The assignment concerns a series of operations to be executed with different data files in order to create one single and tidy dataset.
-Following files are included:
+These operations will be executed by running the R script file **run_analysis.r** (also included).
 
-**run_analysis**  
-This is the R-script that must be run to generate the tidy dataset.   
-The script itself contains comment for each step that has been taken and will explain how to obtain a resultset from gathering the raw data till assembling the final tidy dataset.  
+* Loads the training and the test data files.
+* Narrows the datasets by extracting only the measurements on the mean and standard deviation for each measurement.
+* Assigns descriptive activity names to name the activities in the data set
+* Assigns appropriately labels the data set with descriptive variable names.
+* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 IMPORTANT!
 
 Only when the original data files (not included) are located in your R-Studion working directory (subfolder **"UCI HAR Dataset"**) the resultset can be reproduced!  
+
+Following files are included:
+
+**run_analysis.R**  
+This is the R script file that must be run to generate the tidy dataset.   
+The script itself contains comment for each step that has been taken and will explain how to obtain a resultset from gathering the raw data till assembling the final tidy dataset.  
 
 **resultset.txt**  
 This is the final dataset. This is a space separated file which can be loaded in R studio using following statement:  
